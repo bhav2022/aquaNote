@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block stylesheet %} {{ url_for('static', filename='signUpStylesheet.css') }} {% endblock %} {% block title %}SignUp{% endblock %} {% block content %}
+<div class="mainSignUp">
+    <form method="POST" class="it1">
+        <br>
+        <h3 class="heading">Sign Up</h3><br>
+        <div class="form-group">
+            <input type="email", class="form-control", id="email", name="email", placeholder="Email"><br>
+            <input type="text", class="form-control", id="firstName", name="firstName", placeholder="Your Name"><br>
+            <input type="password", class="form-control", id="password1", name="password1", placeholder="Enter your password"><br>
+            <input type="password", class="form-control", id="password2", name="password2", placeholder="Confirm your password">
+        </div><br>
+        <button class="btn btn-success it2" type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

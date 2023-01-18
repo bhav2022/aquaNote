@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block stylesheet %} {{ url_for('static', filename='homeStylesheet.css') }} {% endblock %} {% block content %}
+<br>
+<div class="custom-div">
+    <div class="common1">
+        <h3 class="heading">Your Notes</h3>
+        <ul class="list-group list-group-flush item1 common1", id="notes">
+        {% for note in user.notes %}
+        <li class="list-group-item item2">{{ note.data }}
+            <span class="noteDate1">{{ note.date }}</span>
+            <button type="button" class="close" onclick="deleteNote({{ note.id }})">
+                <span aria-hidden="true" class="romania">&times;</span>
+            </button>
+        </li>
+        {% endfor %}
+        </ul>
+        <form method="POST" class="formCustom">
+            <textarea name="note" id="note" class="form-control" placeholder="Something is better than nothing. Try typing something to get started."></textarea><br>
+            <div align="center">
+                <button type="submit" class="btn btn-primary btnCustom">SAVE</button>
+            </div>
+            <p class="warning">&#9432; The date-time mentioned on the note is according to the time in London.</p>
+    </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+h1{
+    color: aquamarine;
+}
+
+body{
+    background-image: radial-gradient(rgb(137, 34, 89), rgb(27, 0, 124));
+    height: 1080px;
+}
+
+p{
+    color: white;
+    font-size: large;
+}
+
+em{
+    font-weight: bolder;
+}

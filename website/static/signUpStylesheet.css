@@ -1,0 +1,24 @@
+body{
+    background-image: radial-gradient(rgb(137, 34, 89), rgb(27, 0, 124));
+    height: 1080px;
+}
+
+.heading{
+    color: aquamarine;
+}
+
+.mainSignUp{
+    background-color: rgba(3, 0, 53, 0.281);
+    border: aquamarine 2px dashed;
+    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+    margin-top: 50px;
+}
+
+.it1{
+    margin: 20px;
+}
+
+.it2{
+    padding: 10px;
+}
